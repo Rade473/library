@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="new_book_form"action="submit">
+    <label for="title">Title</label>
+    <input type="text" id= "title" placeholder="Name of the book">
+    <label for="author">Author</label>
+    <input type="text" id="author" placeholder="Author">
+    <label for="pages">№  of pages</label>
+    <input type="number" id="pages">
+    <label for="read">Have you read it?</label>
+    <select id="read">
+      <option value="1">Yes</option>
+      <option value=0>No</option>
+    </select>
+    <button id="submit_book">Add book</button>
+
+
+  </form>
+  <div class="main">
+  <h1>Library App</h1>
+  <button id="add_book">+ Add Book</button>
+  <div id="booklist">
+  <div class="book_container">
+  <p> Game of Thrones</p>
+  <p> by J.R.R. Martin</p>
+  <p> Pages: 548</p>
+
+  <button id="read">Read: No</button>
+  <button id="delete"> Remove this</button>
+</div>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
