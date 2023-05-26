@@ -9,6 +9,7 @@ div.book_container{
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
+  width: 170px;
 }
 
 form#new_book_form{
@@ -26,9 +27,25 @@ form#new_book_form{
   background-color: bisque;
   border-radius: 20px;
   padding: 25px;
+  animation: 1s fadeOut;
+  animation-fill-mode: forwards;
   visibility: hidden;
 }
 
+form#new_book_form.show{
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 button {
   background-color: chocolate;
   color: white;
@@ -36,6 +53,13 @@ button {
   border-radius: 5px;
   padding: 5px;
 }
+
+
+div.book_container > button{
+  width: 80px;
+  margin: 2px;
+}
+
 
 form>input{
   height: 25px;
